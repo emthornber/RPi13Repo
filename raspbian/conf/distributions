@@ -4,6 +4,6 @@ Architectures: armhf arm64
 Components: main
 Contents:
 SignWith: AB16465C8DE5B60B
-Origin: emthornber.github.io/rpi13repo
+Origin: emthornber.github.io/RPi13Repo
 Label: MERG Debian 13 Packages
 Description: Apt repository for MERG debian trixie packages

@@ -9,7 +9,7 @@
 ################################################################################
 
 # Apt Repository URL on Github
-REPOURL="https://emthornber.github.io/rpi13repo"
+REPOURL="https://emthornber.github.io/RPi13Repo"
 # Public Key file name
 KEYFILE="gpg-pubkey2.asc"
 # Keyring file name
