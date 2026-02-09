@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<title>MERG-DEV APT Repository</title>
+	<style type="text/css">
+		#footer {
+			text-align: center;
+			font-size: 10pt;
+		}
+
+		;
+	</style>
+</head>
+
+<body>
+	<h1>MERG-DEV APT Repository</h1>
+
+	<p>An APT repository of the Model Electonic Railway Group, which is used
+		for hosting Raspbian packages.</p>
+
+	<p>The repository contains Raspbian Trixie (Debian 13) packages
+		for ARM (32-bit) and ARM64 (64-bit).</p>
+
+	<p>To add the repository to your installation, click on the
+		<a href="mergdev-rpi13.sh" download>mergdev-rpi13.sh</a>
+		script to download it. After the download has completed, open a
+		terminal and execute the script using the following command :
+	</p>
+
+	<code>
+		sudo sh mergdev-rpi13.sh&#x21B2;
+	</code>
+
+	<p>This will add the repository to your sources list and install the
+		necessary GPG key.</p>
+
+	<p>Alternativey open a terminal and run the following commands:</p>
+	<ol>
+		<li>
+			<p>You may need to install the following packages:</p>
+
+			<code> sudo apt-get update&#x21B2;</code><br>
+			<code> sudo apt-get install ca-certificates gpg wget&#x21B2;</code>
+		</li>
+
+		<li>
+			<p>Obtain a copy of our signing key:</p>
+
+			<code>
+				wget -O - <a href="https://emthornber.github.io/rpi13repo/raspbian/gpg-pubkey2.asc">https://emthornber.github.io/rpi13repo/raspbian/gpg-pubkey2.asc</a> 2&gt;/dev/null |&#x21B2;<br>
+					gpg --dearmor - |&#x21B2;<br>
+					sudo tee /usr/share/keyrings/mergdev-archive-keyring2.gpg &gt;/dev/null&#x21B2;
+			</code>
+		</li>
+
+		<li>
+			<p>Add the repository to your sources list and update.</p>
+
+			<code>
+				echo 'deb [signed-by=/usr/share/keyrings/mergdev-archive-keyring2.gpg] https://emthornber.github.io/rpi13repo/raspbian/ trixie main' |&#x21B2;<br>
+				sudo tee /etc/apt/sources.list.d/mergdev.list &gt;/dev/null&#x21B2;<br>
+				sudo apt-get update&#x21B2;<br>
+			</code>
+		</li>
+	</ol>
+
+	<p>Now you can install any package from our APT repository. As an example, try installing the <code>autowap</code>
+		package either from the command line:</p>
+
+	<code>
+		sudo apt-get install autowap&#x21B2;
+	</code>
+
+	<p>or using the <strong>Software</strong> application in Raspbian vis</p>
+
+	<code>
+		Raspberry | Preferences | Add / Remove Software
+	</code>
+
+	<p>and searching for <code>autowap</code></p>
+
+	<p>For all questions and concerns, please contact <a
+			href="mailto:mark.thornber@merg.org.uk">mark.thornber@merg.org.uk</a>.</p>
+
+	<hr />
+
+	<footer id="footer">Copyright &copy; 2024-2026 Model Electronic Railway Group | <a
+			href="https://www.merg.org.uk/">https://www.merg.org.uk/</a></footer>
+</body>
+
+</html>

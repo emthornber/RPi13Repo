@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: emthornber.github.io/rpi13repo
+Label: MERG Debian 13 Packages
+Architecture: arm64
+Description: Apt repository for MERG debian trixie packages
