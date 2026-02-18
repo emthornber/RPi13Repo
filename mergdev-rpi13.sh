@@ -101,7 +101,7 @@ apt-get update
 # shellcheck disable=SC2086
 apt-get install -y ${packages}
 
-test -n "${get_keyring}" && (wget -O - ${REPOURL}/raspbian/${KEYFILE} 2>/dev/null | gpg --dearmor - > /usr/share/keyrings/${KEYRINGFILE} )
+test -n "${get_keyring}" && (curl --silent ${REPOURL}/raspbian/${KEYFILE} 2>/dev/null | gpg --dearmor - > /usr/share/keyrings/${KEYRINGFILE} )
 
 echo "deb [signed-by=/usr/share/keyrings/${KEYRINGFILE}] ${REPOURL}/raspbian/ ${release} main" > /etc/apt/sources.list.d/mergdev.list
 
