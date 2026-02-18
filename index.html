@@ -47,9 +47,9 @@
 			<p>Obtain a copy of our signing key:</p>
 
 			<code>
-				wget -O - <a href="https://emthornber.github.io/RPi13Repo/raspbian/gpg-pubkey2.asc">https://emthornber.github.io/RPi13Repo/raspbian/gpg-pubkey2.asc</a> 2&gt;/dev/null |&#x21B2;<br>
+				wget -O - <a href="https://emthornber.github.io/RPi13Repo/raspbian/gpg-pubkey3.asc">https://emthornber.github.io/RPi13Repo/raspbian/gpg-pubkey3.asc</a> 2&gt;/dev/null |&#x21B2;<br>
 					gpg --dearmor - |&#x21B2;<br>
-					sudo tee /usr/share/keyrings/mergdev-archive-keyring2.gpg &gt;/dev/null&#x21B2;
+					sudo tee /usr/share/keyrings/mergdev-archive-keyring3.gpg &gt;/dev/null&#x21B2;
 			</code>
 		</li>
 
@@ -57,7 +57,7 @@
 			<p>Add the repository to your sources list and update.</p>
 
 			<code>
-				echo 'deb [signed-by=/usr/share/keyrings/mergdev-archive-keyring2.gpg] https://emthornber.github.io/RPi13Repo/raspbian/ trixie main' |&#x21B2;<br>
+				echo 'deb [signed-by=/usr/share/keyrings/mergdev-archive-keyring3.gpg] https://emthornber.github.io/RPi13Repo/raspbian/ trixie main' |&#x21B2;<br>
 				sudo tee /etc/apt/sources.list.d/mergdev.list &gt;/dev/null&#x21B2;<br>
 				sudo apt-get update&#x21B2;<br>
 			</code>

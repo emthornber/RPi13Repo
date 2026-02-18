@@ -1,41 +1,41 @@
-Origin: emthornber.github.io/rpi13repo
+Origin: emthornber.github.io/RPi13Repo
 Label: MERG Debian 13 Packages
 Suite: stable
 Codename: trixie
-Date: Mon, 09 Feb 2026 13:49:33 UTC
+Date: Tue, 17 Feb 2026 14:22:28 UTC
 Architectures: armhf arm64
 Components: main
 Description: Apt repository for MERG debian trixie packages
 MD5Sum:
- 37a16b679317f918155396c71cb1c259 554 main/binary-armhf/Packages
- 9f77551900b80bf7887e3bc03a5fc91b 411 main/binary-armhf/Packages.gz
+ 6a671271776a3aca72d8c57365717aad 572 main/binary-armhf/Packages
+ 1e28ca9a3d385814df7287478576a7aa 425 main/binary-armhf/Packages.gz
  ea2a8a0546f41422d83d3465a547dfe2 182 main/binary-armhf/Release
- f56a7ac86f902c1f74e4ff5191e3ac5b 1110 main/binary-arm64/Packages
- a5f4d57d23f2ba6bf1cd8306fe4a0df7 629 main/binary-arm64/Packages.gz
+ 6a671271776a3aca72d8c57365717aad 572 main/binary-arm64/Packages
+ 1e28ca9a3d385814df7287478576a7aa 425 main/binary-arm64/Packages.gz
  4940a9537ad4a463882938bfc70b9a62 182 main/binary-arm64/Release
  00d5bf7eeaf15ffbd1f33b08fcc80ae3 262 main/Contents-armhf
  f960c3f0496214db7950590bcb812620 124 main/Contents-armhf.gz
- e669e63029055ac2aefb24cd9755e6ec 2700 main/Contents-arm64
- 00fefa8f0c54e470b7f7cf64f4555f81 413 main/Contents-arm64.gz
+ 00d5bf7eeaf15ffbd1f33b08fcc80ae3 262 main/Contents-arm64
+ f960c3f0496214db7950590bcb812620 124 main/Contents-arm64.gz
 SHA1:
- 167c10947ab0c7d4ddade4796992248d419c6987 554 main/binary-armhf/Packages
- 80a605d40368b8cb2e003f70b2a3cf758da25a85 411 main/binary-armhf/Packages.gz
+ aa505e5b6d1d789b16d4865752c5c49ff2976f0d 572 main/binary-armhf/Packages
+ 0e6033fa890a65e9aa78a32da947e64dc88c9eee 425 main/binary-armhf/Packages.gz
  601be52d77c262bb709db78b6671141639ae9b5c 182 main/binary-armhf/Release
- ff36038033434b61c9536106dfb1f2a3baa976c4 1110 main/binary-arm64/Packages
- c3bd3e829e5078892610f51865c080ed290c50b6 629 main/binary-arm64/Packages.gz
+ aa505e5b6d1d789b16d4865752c5c49ff2976f0d 572 main/binary-arm64/Packages
+ 0e6033fa890a65e9aa78a32da947e64dc88c9eee 425 main/binary-arm64/Packages.gz
  ba0f91abc55e4f7ecf53944dfc8328d961bfa777 182 main/binary-arm64/Release
  cadde5d96d164aea63c669d3bcb810d2b789cbf8 262 main/Contents-armhf
  50c45d31d64fe4418e58ea2268743132ee4595a1 124 main/Contents-armhf.gz
- 7337b22c0a88630e049fc464091d3441046f658a 2700 main/Contents-arm64
- 16a313f7cc09093fecc123ff3469b8163b2983fb 413 main/Contents-arm64.gz
+ cadde5d96d164aea63c669d3bcb810d2b789cbf8 262 main/Contents-arm64
+ 50c45d31d64fe4418e58ea2268743132ee4595a1 124 main/Contents-arm64.gz
 SHA256:
- d0f2630163b11c7b0a9b740d422eac7b03860c81ca0fccb4cd6908614e096dc1 554 main/binary-armhf/Packages
- 3f488dd0bc28ec5184b9117f1ae8d03c2779e5932388e37b548c508bf9d3f05d 411 main/binary-armhf/Packages.gz
+ c0d39ffd02a52fcce5bb34a6885b2695873614bb652536c22647dbda91b925de 572 main/binary-armhf/Packages
+ 5b3512e27b7b967c0cae6a887a5ff713c851a137b8d01a578b9f86223a285160 425 main/binary-armhf/Packages.gz
  285d4efb3a6da3a387f2edfbaa57e202d74a91d046aaf1be8f2b65e581d20081 182 main/binary-armhf/Release
- 05877d5bb7f401be46969350aea5b02632045e8194b89d1864dc6ff439691ca7 1110 main/binary-arm64/Packages
- 0359d702d3c6e74131b0715c4148ac5efb20aa72e4538a3630bbb966611947db 629 main/binary-arm64/Packages.gz
+ c0d39ffd02a52fcce5bb34a6885b2695873614bb652536c22647dbda91b925de 572 main/binary-arm64/Packages
+ 5b3512e27b7b967c0cae6a887a5ff713c851a137b8d01a578b9f86223a285160 425 main/binary-arm64/Packages.gz
  f49a9be03dfd92bc6e7efb00be92dff8c3ef54e49555b2c7cabdc4a3cdaea635 182 main/binary-arm64/Release
  865d677c35ef4630d37d770f8017ec68ba998d43e456b2822b97dfbd7352ab8a 262 main/Contents-armhf
  b35a55019299c8c0328794cfcb7f5438c3786dfbf38618ef4461557b8f6df09e 124 main/Contents-armhf.gz
- 04aed103818cbfddfad9ac071f27c84e5452f04b6dad0fd462a8460cfc04c01b 2700 main/Contents-arm64
- 9ea3eb105a50bcc8abd69e7ad4f8f52b1cbd41b0ba12f2f9c71869f0151fc5b1 413 main/Contents-arm64.gz
+ 865d677c35ef4630d37d770f8017ec68ba998d43e456b2822b97dfbd7352ab8a 262 main/Contents-arm64
+ b35a55019299c8c0328794cfcb7f5438c3786dfbf38618ef4461557b8f6df09e 124 main/Contents-arm64.gz

@@ -1,33 +1,17 @@
 Package: autowap
-Version: 1.0.7
+Version: 2.0.0
 Maintainer: Enchanted Systems Limited
 Architecture: all
 Priority: optional
 Section: utils
-Filename: pool/main/a/autowap/autowap_1.0.7_all.deb
-Size: 3768
-SHA256: 221b4d1c82e07e28e871d0cb5900dfa91c71b81ba9320a5956800bf84286e2e6
-SHA1: 016c7ae1b2c72325b925b530b0df106dfc75753d
-MD5sum: 3e9b7faecddf978e570cee303832d9ef
+Filename: pool/main/a/autowap/autowap_2.0.0_all.deb
+Size: 3964
+SHA256: 115f1774379413c7a81ec2dcd3f3b316b42c94bcd3824c0c5549866faa9823d5
+SHA1: ea09c66c1cebb776bdff17448799414551869ad8
+MD5sum: 8bfbd44a05c0c231d2107e312da59a29
 Description: Create a WAP on a RPi if home WiFi is not available
  Copyright: 2024 merg.org.uk
  A service to set up a WAP if no configured WiFi routers can be found
-Depends: network-manager
+Depends: network-manager, python3-libgpiod
 Conflicts: autohs
-
-Package: canpi-web-app-ssr
-Version: 0.2.2
-Maintainer: Enchanted Systems Limited
-Architecture: arm64
-Priority: optional
-Section: utils
-Filename: pool/main/c/canpi-web-app-ssr/canpi-web-app-ssr_0.2.2_arm64.deb
-Size: 3030656
-SHA256: 32c4eabf1695603b3b675b1225335b2f5d741afa6fbf9d69b89ed3766c8e99b2
-SHA1: 1d2fb595a13cbdbfe9bc1fc59a01a89612a7091c
-MD5sum: 78dc0ea102964ed1bf32c2f8376cd330
-Description: Maintain Hotspot and CanPi configurations
- Copyright: 2024-2025 MERG
- Web Application for the maintenance of Hotspot and CanPi configurations
-Depends: debconf
 

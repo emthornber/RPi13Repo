@@ -11,9 +11,9 @@
 # Apt Repository URL on Github
 REPOURL="https://emthornber.github.io/RPi13Repo"
 # Public Key file name
-KEYFILE="gpg-pubkey2.asc"
+KEYFILE="gpg-pubkey3.asc"
 # Keyring file name
-KEYRINGFILE="mergdev-archive-keyring2.gpg"
+KEYRINGFILE="mergdev-archive-keyring3.gpg"
 
 # -e - exit immediately if a command exits with non-zero status
 # -u - treat unset variables as an error when substituting
@@ -101,7 +101,7 @@ apt-get update
 # shellcheck disable=SC2086
 apt-get install -y ${packages}
 
-test -n "${get_keyring}" && (wget -O - ${REPOURL}/raspbian/${KEYFILE} 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/${KEYRINGFILE} > /dev/null )
+test -n "${get_keyring}" && (wget -O - ${REPOURL}/raspbian/${KEYFILE} 2>/dev/null | gpg --dearmor - > /usr/share/keyrings/${KEYRINGFILE} )
 
 echo "deb [signed-by=/usr/share/keyrings/${KEYRINGFILE}] ${REPOURL}/raspbian/ ${release} main" > /etc/apt/sources.list.d/mergdev.list
 
