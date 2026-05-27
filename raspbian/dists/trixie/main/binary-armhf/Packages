@@ -5,13 +5,29 @@ Architecture: all
 Priority: optional
 Section: utils
 Filename: pool/main/a/autowap/autowap_2.0.0_all.deb
-Size: 3964
-SHA256: 115f1774379413c7a81ec2dcd3f3b316b42c94bcd3824c0c5549866faa9823d5
-SHA1: ea09c66c1cebb776bdff17448799414551869ad8
-MD5sum: 8bfbd44a05c0c231d2107e312da59a29
+Size: 4032
+SHA256: 9545cc3c42ab3de2d4b25f4900e744fd0ede4a38b8bf8489d1dddfa20bba4574
+SHA1: 6c90c8a104075af143a047cdbeee514690dab681
+MD5sum: 906193d8d87e13aca738de3b45779e47
 Description: Create a WAP on a RPi if home WiFi is not available
  Copyright: 2024 merg.org.uk
  A service to set up a WAP if no configured WiFi routers can be found
 Depends: network-manager, python3-libgpiod
 Conflicts: autohs
+
+Package: canpi-server
+Version: 2.0.1
+Maintainer: Enchanted Systems Limited
+Architecture: armhf
+Priority: optional
+Section: utils
+Filename: pool/main/c/canpi-server/canpi-server_2.0.1_armhf.deb
+Size: 112204
+SHA256: 7e52a42bf70e2f6104018d1e94a291c4e2233fa7ef551988839bb8a6731439f8
+SHA1: caa7b010253f0e2c517c367465b2b43b79dde8fa
+MD5sum: 8225d34fd736ab4a726f5872b3c02d10
+Description: Interface to MERG CBUS via CANPiCAP
+ Copyright: 2024 MERG
+ Interfaces MERG-CANBUS protocol with JMRI Engine Driver application.
+Depends: avahi-daemon, avahi-utils, debconf, can-utils, liblog4cpp5v5, libgpiod3
 
